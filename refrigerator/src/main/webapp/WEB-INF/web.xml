@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>refrigerator</display-name>
+	<welcome-file-list>
+		<welcome-file>Fridge.html</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>FridgeServlet</servlet-name>
+		<servlet-class>com.xworkz.fridge.servlet.FridgeServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FridgeServlet</servlet-name>
+		<url-pattern>/save</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LGServlet</servlet-name>
+		<servlet-class>com.xworkz.fridge.servlet.LGServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LGServlet</servlet-name>
+		<url-pattern>/save1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SamsungServlet</servlet-name>
+		<servlet-class>com.xworkz.fridge.servlet.SamsungServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SamsungServlet</servlet-name>
+		<url-pattern>/save2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>HaierServlet</servlet-name>
+		<servlet-class>com.xworkz.fridge.servlet.HaierServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HaierServlet</servlet-name>
+		<url-pattern>/save3</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>WhirlpoolServlet</servlet-name>
+		<servlet-class>com.xworkz.fridge.servlet.WhirlpoolServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>WhirlpoolServlet</servlet-name>
+		<url-pattern>/save4</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GodrejServlet</servlet-name>
+		<servlet-class>com.xworkz.fridge.servlet.GodrejServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GodrejServlet</servlet-name>
+		<url-pattern>/save5</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>BoschServlet</servlet-name>
+		<servlet-class>com.xworkz.fridge.servlet.BoschServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>BoschServlet</servlet-name>
+		<url-pattern>/save6</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>PanasonicServlet</servlet-name>
+		<servlet-class>com.xworkz.fridge.servlet.PanasonicServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PanasonicServlet</servlet-name>
+		<url-pattern>/save7</url-pattern>
+	</servlet-mapping>
+
+</web-app>
