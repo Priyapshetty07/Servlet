@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Grocery Servlet</title>
+</head>
+<body style="background-color:blueviolet;">
+	<h1 style="font-size: 30px; color: red; text-align: center;">Grocery
+		details</h1>
+	<form action="send">
+		<table style="font-family: cursive; padding-left: 10%; background: center; margin-top: 30px; font-size: 25px; color: rgb(17, 16, 17);">
+			<tr>
+				<td><label>Grocery Name:</label></td>
+				<td><input type="text" name="GrocerysName"></td>
+			</tr>
+			<tr>
+				<td><label>Items Price:</label></td>
+				<td><input type="text" name="GroceryPrice"></td>
+			</tr>
+
+			<tr>
+				<td><label>Grocery Types:</label></td>
+				<td><input type="radio" name="ItemTypes"><label>Eggs</label></td>
+				<td><input type="radio" name="ItemTypes"><label>Cheese</label></td>
+				<td><input type="radio" name="ItemTypes"><label>Oils</label></td>
+				<td><input type="radio" name="ItemTypes"><label>Rice</label></td>
+				<td><input type="radio" name="ItemTypes"><label>Paste</label></td>
+				<td><input type="radio" name="ItemTypes"><label>Dried Fruit</label></td>
+				
+			</tr>
+
+			<tr>
+				<td><label>Quantity:</label></td>
+				<td><select name="Quantity">
+						<option>1/2 kg</option>
+						<option>1 kg</option>
+						<option>1.5 kg</option>
+						<option>2 kg</option>
+						<option>2.5 kg</option>
+						<option>3 kg</option>
+						<option>3.5 kg</option>
+						<option>more than 3.5 kg</option>
+				</select></td>
+			</tr>
+			
+			<tr>
+			<td><input type="submit" value="save"></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>
