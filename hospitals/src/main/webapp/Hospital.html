@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Hospital Servlet</title>
+</head>
+<body style="background-color: honeydew;">
+	<h1 style="font-size: 30px; color: red; text-align: center;">Hospital
+		details</h1>
+	<form action="send">
+
+		<pre
+			style="font-family: cursive; font-size: 20px; color: rgb(61, 47, 255);">
+          
+          Name:<input type="text" name="hospitalName">
+          
+          Founder:<input type="text" name="FounderName">
+          
+          Established Date(YYYY-MM-DD):<input type="date" name="EstDate">
+          
+          Specilizations:<h5 style="font-size: 20px; color: rgb(105, 105, 105);">
+            <input type="radio" value="Dentist" name="Specilization">Dentist   
+            <input type="radio" value="Psychiatrist"
+					name="Specilization">Psychiatrist    
+            <input type="radio" value="Gynaecologist"
+					name="Specilization">Gynaecologist 
+            <input type="radio" value="Drematologist"
+					name="Specilization">Drematologist   
+            <input type="radio" value="General Surgeon"
+					name="Specilization">General Surgeon    
+            <input type="radio" value="OB/GYN" name="Specilization">OB/GYN   
+            <input type="radio" value="Neurologist" name="Specilization">Neurologist   
+            <input type="radio" value="Endocrinologist"
+					name="Specilization">Endocrinologist    
+            <input type="radio" value="Rheumatologist"
+					name="Specilization">Rheumatologist</h5>    
+          
+          Chief Doctor:<h5 style="font-size: 20px; color: rgb(105, 105, 105);">
+            <input type="checkbox" name="ChiefDoctor"
+					value="Dr.Devi Prasad Shetty">Dr.Devi Prasad Shetty
+            <input type="checkbox" name="ChiefDoctor"
+					value="Dr.Ashutosh Vashistha">Dr.Ashutosh Vashistha
+            <input type="checkbox" name="ChiefDoctor"
+					value="Dr.Batendra Kumar">Dr.Batendra Kumar
+            <input type="checkbox" name="ChiefDoctor"
+					value="Dr.Basavaraj G.S">Dr.Basavaraj G.S
+            <input type="checkbox" name="ChiefDoctor"
+					value="Dr.Bagirath Raghuraman">Dr.Bagirath Raghuraman</h5>
+
+           Number OF Nurse:<select name="NumberOFNurse">
+ 	              <option>1</option>
+	              <option>2</option>
+	              <option>3</option>
+	              <option>4</option>
+	              <option>5</option>
+	              <option>6</option>
+	              <option>7</option>
+	              <option>8</option>
+	              <option>9</option>
+	              <option>10</option>
+	              <option>MORE THAN 10</option>
+	             </select>
+	             
+	   Number Of Beds:<select name="NumberOfBeds">
+ 	              <option>1</option>
+	              <option>2</option>
+	              <option>3</option>
+	              <option>4</option>
+	              <option>5</option>
+	              <option>6</option>
+	              <option>7</option>
+	              <option>8</option>
+	              <option>9</option>
+	              <option>10</option>
+	              <option>MORE THAN 10</option>
+	             </select>
+          
+            <input type="submit" value="save">
+        </pre>
+	</form>
+
+</body>
+</html>
