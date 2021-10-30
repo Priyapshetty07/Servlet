@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Country Servlet</title>
+</head>
+<body style="background-color: cyan;">
+	<h1 style="font-size: 30px; color: red; text-align: center;">Country
+		details</h1>
+	<form action="send">
+		<table
+			style="font-family: cursive; padding-left: 10%; background: center; margin-top: 30px; font-size: 25px; color: rgb(17, 16, 17);">
+			<tr>
+				<td><label>Country Name:</label></td>
+				<td><input type="text" name="CountryName"></td>
+			</tr>
+
+			<tr>
+				<td><label>Code:</label></td>
+				<td><input type="number" name="Code"></td>
+			</tr>
+
+			<tr>
+				<td><label>Population:</label></td>
+				<td><select name="Population">
+						<option>less than 20 crores</option>
+						<option>betwen 20 to 50 crores</option>
+						<option>betwen 50 to 100 crores</option>
+						<option>betwen 100 to 150 crores</option>
+						<option>betwen 150 to 200 crores</option>
+						<option>more than 200 crores</option>
+						<option>others</option>
+				</select></td>
+			</tr>
+
+			<tr>
+				<td><label>Language:</label></td>
+				<td><input type="radio" name="Language"><label>English</label></td>
+				<td><input type="radio" name="Language"><label>French</label></td>
+				<td><input type="radio" name="Language"><label>Portuguese</label></td>
+				<td><input type="radio" name="Language"><label>Greek</label></td>
+				<td><input type="radio" name="Language"><label>German</label></td>
+				<td><input type="radio" name="Language"><label>Others</label></td>
+			</tr>
+			<tr>
+				<td><label>Capital:</label></td>
+				<td><input type="text" name="Capital"></td>
+			</tr>
+			<tr>
+				<td><label>Prime Minister:</label></td>
+				<td><input type="text" name="PrimeMinister"></td>
+			</tr>
+			<tr>
+				<td><label>President:</label></td>
+				<td><input type="text" name="President"></td>
+			</tr>
+
+			<tr>
+				<td><input type="submit" value="save"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
