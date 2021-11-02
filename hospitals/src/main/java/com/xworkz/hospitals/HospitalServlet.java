@@ -21,23 +21,23 @@ public class HospitalServlet extends HttpServlet{
 		String hospitalName = request.getParameter("hospitalName");
 		System.out.println("Hospital name ".concat(hospitalName));
 		
-		String FounderName = request.getParameter("FounderName");
-		System.out.println("Hospital Founder Name ".concat(FounderName));
+		String founderName = request.getParameter("founderName");
+		System.out.println("Hospital Founder Name ".concat(founderName));
 		
-		String EstDate = request.getParameter("EstDate");
-		System.out.println("Hospital Established Date ".concat(EstDate));
+		String estDate = request.getParameter("estDate");
+		System.out.println("Hospital Established Date ".concat(estDate));
 		
-		String ChiefDoctor = request.getParameter("ChiefDoctor");
-		System.out.println("ChiefDoctor in hospital".concat(ChiefDoctor));
+		String chiefDoctor = request.getParameter("chiefDoctor");
+		System.out.println("ChiefDoctor in hospital".concat(chiefDoctor));
 		
-	    String Specilization = request.getParameter("Specilization");
-		System.out.println("Specilization in hospital".concat(Specilization));
+	    String specilization = request.getParameter("specilization");
+		System.out.println("Specilization in hospital".concat(specilization));
 		
-		String NumberOFNurse = request.getParameter("NumberOFNurse");
-		System.out.println("Number OF Nurse in hospital".concat(NumberOFNurse));
+		String numberOFNurse = request.getParameter("numberOFNurse");
+		System.out.println("Number OF Nurse in hospital".concat(numberOFNurse));
 		
-		String NumberOfBeds = request.getParameter("NumberOfBeds");
-		System.out.println("Number OF Beds in hospital".concat(NumberOfBeds));
+		String numberOfBeds = request.getParameter("numberOfBeds");
+		System.out.println("Number OF Beds in hospital".concat(numberOfBeds));
 		
 		
 		System.out.println("starting to write response");
@@ -49,17 +49,17 @@ public class HospitalServlet extends HttpServlet{
 		out.print("<h1>");
 		out.print("Details saved for Hospital name :".concat(hospitalName));
 		out.print("<br>");
-		out.print("Details saved for Hospital Founder name :".concat(FounderName));
+		out.print("Details saved for Hospital Founder name :".concat(founderName));
 		out.print("<br>");
-		out.print("Details saved for Hospital Established Date :".concat(EstDate));
+		out.print("Details saved for Hospital Established Date :".concat(estDate));
 		out.print("<br>");
-		out.print("Details saved for  hospital Specilization docters :".concat(Specilization));
+		out.print("Details saved for  hospital Specilization docters :".concat(specilization));
 		out.print("<br>");
-		out.print("Details saved for  hospital Chief docters :".concat(ChiefDoctor));
+		out.print("Details saved for  hospital Chief docters :".concat(chiefDoctor));
 		out.print("<br>");
-		out.print("Details saved for Number OF Nurse in hospital:".concat(NumberOFNurse));
+		out.print("Details saved for Number OF Nurse in hospital:".concat(numberOFNurse));
 		out.print("<br>");
-		out.print("Details saved for Number OF Beds in hospital :".concat(NumberOfBeds));
+		out.print("Details saved for Number OF Beds in hospital :".concat(numberOfBeds));
 		out.print("<br>");
 	    out.print("Thank you !!!");
 		out.print("</h1>");

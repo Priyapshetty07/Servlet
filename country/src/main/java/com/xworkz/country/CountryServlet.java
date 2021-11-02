@@ -20,26 +20,26 @@ public class CountryServlet extends HttpServlet {
 
 		System.out.println("invoked service in Country servlet");
 
-		String CountryName = request.getParameter("CountryName");
-		System.out.println("Country Name".concat(CountryName));
+		String countryName = request.getParameter("countryName");
+		System.out.println("Country Name".concat(countryName));
 
-		String Code = request.getParameter("Code");
-		System.out.println("Country Code ".concat(Code));
+		String code = request.getParameter("code");
+		System.out.println("Country Code ".concat(code));
 
-		String Population = request.getParameter("Population");
-		System.out.println("Country Population ".concat(Population));
+		String population = request.getParameter("population");
+		System.out.println("Country Population ".concat(population));
 
-		String Language = request.getParameter("Language");
-		System.out.println("Country Language".concat(Language));
+		String language = request.getParameter("language");
+		System.out.println("Country Language".concat(language));
 
-		String Capital = request.getParameter("Capital");
-		System.out.println("Country Capital ".concat(Language));
+		String capital = request.getParameter("capital");
+		System.out.println("Country Capital ".concat(capital));
 
-		String PrimeMinister = request.getParameter("PrimeMinister");
-		System.out.println("Country PrimeMinister ".concat(PrimeMinister));
+		String primeMinister = request.getParameter("primeMinister");
+		System.out.println("Country PrimeMinister ".concat(primeMinister));
 
-		String President = request.getParameter("President");
-		System.out.println("Country President ".concat(President));
+		String president = request.getParameter("president");
+		System.out.println("Country President ".concat(president));
 
 		System.out.println("starting to write response");
 		response.setContentType("text/html");
@@ -48,19 +48,19 @@ public class CountryServlet extends HttpServlet {
 		out.print("<body style='background-color:#FFC0CB'>");
 
 		out.print("<h1>");
-		out.print("Details saved for Country Name :" + (CountryName));
+		out.print("Details saved for Country Name :" + (countryName));
 		out.print("<br>");
-		out.print("Details saved for Country code :" + (Code));
+		out.print("Details saved for Country code :" + (code));
 		out.print("<br>");
-		out.print("Details saved for Country population:" + (Population));
+		out.print("Details saved for Country population:" + (population));
 		out.print("<br>");
-		out.print("Details saved for Country Language :" + (Language));
+		out.print("Details saved for Country Language :" + (language));
 		out.print("<br>");
-		out.print("Details saved for Country Capital :" + (Capital));
+		out.print("Details saved for Country Capital :" + (capital));
 		out.print("<br>");
-		out.print("Details saved for Country PrimeMinister :" + (PrimeMinister));
+		out.print("Details saved for Country PrimeMinister :" + (primeMinister));
 		out.print("<br>");
-		out.print("Details saved for Country  President :" + (President));
+		out.print("Details saved for Country  President :" + (president));
 		out.print("<br>");
 
 		out.print("Thank you !!!");

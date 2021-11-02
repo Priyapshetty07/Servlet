@@ -20,23 +20,23 @@ public class SweetServlet extends HttpServlet {
 
 		System.out.println("invoked service in Sweet servlet");
 
-		String Sweetname = request.getParameter("Sweetname");
-		System.out.println("Sweet name ".concat(Sweetname));
+		String sweetName = request.getParameter("sweetName");
+		System.out.println("Sweet name ".concat(sweetName));
 
-		String SweetOrigin = request.getParameter("SweetOrigin");
-		System.out.println("Sweet Origin ".concat(SweetOrigin));
+		String sweetOrigin = request.getParameter("sweetOrigin");
+		System.out.println("Sweet Origin ".concat(sweetOrigin));
 
-		String SweetColor = request.getParameter("SweetColor");
-		System.out.println("Sweet Color ".concat(SweetColor));
+		String sweetColor = request.getParameter("sweetColor");
+		System.out.println("Sweet Color ".concat(sweetColor));
 
-		String SweetQuantity = request.getParameter("SweetQuantity");
-		System.out.println("Sweet Quantity ".concat(SweetQuantity));
+		String sweetQuantity = request.getParameter("sweetQuantity");
+		System.out.println("Sweet Quantity ".concat(sweetQuantity));
 
-		String SweetPrice = request.getParameter("SweetPrice");
-		System.out.println("Sweet Price ".concat(SweetPrice));
+		String sweetPrice = request.getParameter("sweetPrice");
+		System.out.println("Sweet Price ".concat(sweetPrice));
 
-		String SweetTaste = request.getParameter("SweetTaste");
-		System.out.println("Sweet Taste ".concat(SweetTaste));
+		String sweetTaste = request.getParameter("sweetTaste");
+		System.out.println("Sweet Taste ".concat(sweetTaste));
 
 		System.out.println("starting to write response");
 		response.setContentType("text/html");
@@ -45,17 +45,17 @@ public class SweetServlet extends HttpServlet {
 		out.print("<body style='background-color:#FFC0CB'>");
 
 		out.print("<h1>");
-		out.print("Details saved for Sweet Name  :".concat(Sweetname));
+		out.print("Details saved for Sweet Name  :".concat(sweetName));
 		out.print("<br>");
-		out.print("Details saved for Sweet Origin :".concat(SweetOrigin));
+		out.print("Details saved for Sweet Origin :".concat(sweetOrigin));
 		out.print("<br>");
-		out.print("Details saved for Sweet Color :".concat(SweetColor));
+		out.print("Details saved for Sweet Color :".concat(sweetColor));
 		out.print("<br>");
-		out.print("Details saved for Sweet Quantity :".concat(SweetQuantity));
+		out.print("Details saved for Sweet Quantity :".concat(sweetQuantity));
 		out.print("<br>");
-		out.print("Details saved for Sweet Price :".concat(SweetPrice));
+		out.print("Details saved for Sweet Price :".concat(sweetPrice));
 		out.print("<br>");
-		out.print("Details saved for Sweet Taste :".concat(SweetTaste));
+		out.print("Details saved for Sweet Taste :".concat(sweetTaste));
 		out.print("<br>");
 
 		out.print("Thank you !!!");

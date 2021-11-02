@@ -18,17 +18,17 @@ public class GrocerysServlet extends HttpServlet{
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("invoked service in Grocery servlet");
 		
-		String GrocerysName = request.getParameter("GrocerysName");
-		System.out.println("Grocerys Name ".concat(GrocerysName));
+		String grocerysName = request.getParameter("grocerysName");
+		System.out.println("Grocerys Name ".concat(grocerysName));
 		
-		String GroceryPrice= request.getParameter("GroceryPrice");
-		System.out.println("Grocery Price ".concat(GroceryPrice));
+		String groceryPrice= request.getParameter("groceryPrice");
+		System.out.println("Grocery Price ".concat(groceryPrice));
 		
-		String ItemTypes= request.getParameter("ItemTypes");
-		System.out.println("Grocery Item Types ".concat(ItemTypes));
+		String itemTypes= request.getParameter("itemTypes");
+		System.out.println("Grocery Item Types ".concat(itemTypes));
 		
-		String Quantity= request.getParameter("Quantity");
-		System.out.println("Grocery Item Types ".concat(Quantity));
+		String quantity= request.getParameter("quantity");
+		System.out.println("Grocery Item Types ".concat(quantity));
 		
 		System.out.println("starting to write response");
 		response.setContentType("text/html");
@@ -37,13 +37,13 @@ public class GrocerysServlet extends HttpServlet{
 		out.print("<body style='background-color:#FFC0CB'>");
 		
 		out.print("<h1>");
-		out.print("Details saved for Grocerys Name :".concat(GrocerysName));
+		out.print("Details saved for Grocerys Name :".concat(grocerysName));
 		out.print("<br>");
-		out.print("Details saved for Grocery Price :".concat(GroceryPrice));
+		out.print("Details saved for Grocery Price :".concat(groceryPrice));
 		out.print("<br>");
-		out.print("Details saved for Grocery Item  Types :".concat(ItemTypes));
+		out.print("Details saved for Grocery Item  Types :".concat(itemTypes));
 		out.print("<br>");
-		out.print("Details saved for Grocery Quantity :".concat(Quantity));
+		out.print("Details saved for Grocery Quantity :".concat(quantity));
 		out.print("<br>");
 		
 	    out.print("Thank you !!!");

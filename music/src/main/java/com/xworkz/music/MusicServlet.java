@@ -19,17 +19,17 @@ public class MusicServlet extends HttpServlet {
 			throws ServletException, IOException {
 		System.out.println("invoked service in Music servlet");
 
-		String AlbumName = request.getParameter("AlbumName");
-		System.out.println("Album Name ".concat(AlbumName));
+		String albumName = request.getParameter("albumName");
+		System.out.println("Album Name ".concat(albumName));
 
-		String SingerName = request.getParameter("SingerName");
-		System.out.println("Singer Name ".concat(SingerName));
+		String singerName = request.getParameter("singerName");
+		System.out.println("Singer Name ".concat(singerName));
 
-		String Lyrisct = request.getParameter("Lyrisct");
-		System.out.println("Singer Name ".concat(Lyrisct));
+		String lyrisct = request.getParameter("lyrisct");
+		System.out.println("Singer Name ".concat(lyrisct));
 
-		String Language = request.getParameter("Language");
-		System.out.println("Singer Name ".concat(Language));
+		String language = request.getParameter("language");
+		System.out.println("Singer Name ".concat(language));
 
 		System.out.println("starting to write response");
 		response.setContentType("text/html");
@@ -38,13 +38,13 @@ public class MusicServlet extends HttpServlet {
 		out.print("<body style='background-color:#FFC0CB'>");
 
 		out.print("<h1>");
-		out.print("Details saved for AlbumName  :".concat(AlbumName));
+		out.print("Details saved for AlbumName  :".concat(albumName));
 		out.print("<br>");
-		out.print("Details saved for Singer Name :".concat(SingerName));
+		out.print("Details saved for Singer Name :".concat(singerName));
 		out.print("<br>");
-		out.print("Details saved for Lyrisct :".concat(Lyrisct));
+		out.print("Details saved for Lyrisct :".concat(lyrisct));
 		out.print("<br>");
-		out.print("Details saved for Language:".concat(Language));
+		out.print("Details saved for Language:".concat(language));
 		out.print("<br>");
 
 		out.print("Thank you !!!");
