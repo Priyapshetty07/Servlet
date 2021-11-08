@@ -36,11 +36,15 @@ public class DetailsServlet extends HttpServlet {
             // For the first parameter,
             // get the data using request object
             // sets the data to st pointer
-            statement.setString(1, request.getParameter("NAME"));
-            statement.setString(2, request.getParameter("TYPE"));
-            statement.setString(3, request.getParameter("YOP"));
-            statement.setString(4, request.getParameter("EDUCATION"));
+            statement.setString(1, request.getParameter("name"));
+            statement.setString(2, request.getParameter("type"));
+            statement.setString(3, request.getParameter("yop"));
+            statement.setString(4, request.getParameter("education"));
             
+            System.out.println(request.getParameter("name"));
+            System.out.println(request.getParameter("type"));
+            System.out.println(request.getParameter("yop"));
+            System.out.println(request.getParameter("education"));
             // Execute the insert command using executeUpdate()
             // to make changes in database
             
