@@ -8,7 +8,7 @@ public class DatebaseConnection {
 
 	public static Connection initializeDatabase() throws SQLException, ClassNotFoundException {
 		// Initialize all the information regarding
-		// Database Connection
+		// Database Connections
 		String dbDriver = "com.mysql.jdbc.Driver";
 		String dbURL = "jdbc:mysql://localhost:3306/";
 		// Database name to access
